@@ -1,0 +1,123 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='../static/css/home.css')
+  link(rel='stylesheet' href='../static/css/threeBG.css')
+  link(rel='stylesheet' href='../static/css/button.css')
+  link(rel='stylesheet' href='../static/css/social.css')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css')
+  // additional scripts
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js')
+  // 
+  script(src='../static/js/home.jquery')
+  title Parth Baviskar
+nav.navbar
+  #trapezoid
+    a.sub-home(href='#') Home
+    a.expandHome(href='#') About
+    a(href='#sectionTwo') Services
+    a(href='#sectionThree') Resume
+    a.expandHome(href='#sectionFive') Contact
+span#sectionOne(style='display: flex;justify-content: space-evenly;flex-direction: row;align-content: stretch;align-items: center;')
+  section#about
+    p
+      a(style='font-family: roboto;') &mdash;&mdash;&mdash;
+      |  Hello
+    h1 I&apos;m Parth Baviskar
+    hr
+    p
+      | This is 
+      c Parth Baviskar
+      | , full-stack web developer located in India looking for working from around the globe.
+  section#photo
+    #sun2
+      #sun
+        #earth
+section#sectionTwo
+  h2 SERVICES
+  hr
+  br
+  img#webLogo(src='../static/images/webLogo.png')
+  br
+  a Web Development
+section#sectionThree
+  h2 RESUME
+  span#resume
+    #technicalSkills
+      h3 Technical Skills
+      hr
+      .cards
+        strong
+          | Proficient Skills:
+        br
+        p JavaScript, Node.js, Express, SQL, MongoDB, HTML5, CSS3
+      .cards
+        strong
+          | Exposure to:
+        br
+        p C, C++, Python, SQL, AWS, Git, Heroku
+    #education
+      h3 Education
+      hr
+      .cards
+        strong Information Technology
+        br
+        a from Vidyalankar Institute of Technology
+        p -expected to be graduated in 2024
+  .area
+    ul.circles
+      li
+      li
+      li
+section#sectionFour
+  #glass
+    #reflection
+    h2 Featured Projects
+    hr
+    // cards hover codepen
+    span.projects
+      //
+        <div class="circleCard">
+        <a href="#" class="fill-div"><h3 class="title">Netflix Clone</h3></a>
+        </div>
+      .circleCard
+        a.fill-div(href='https://github.com/parthhimself22/parth-chat-app' target='_blank')
+          h3.title Chat app
+      .circleCard
+        a.fill-div(href='https://github.com/parthhimself22/WeatherApp' target='_blank')
+          h3.title Weather App
+      .circleCard
+        a.fill-div(href='https://github.com/parthhimself22/parth-url-shortener' target='_blank')
+          h3.title URL Shortener
+    span.projects
+      //
+        <div class="circleCard">
+        <a href="#" class="fill-div"><h3 class="title">Mountain View</h3></a>
+        </div>
+      //
+        <div class="circleCard">
+        <a href="#" class="fill-div"><h3 class="title">Desert Destinations</h3></a>
+        </div>
+      //
+        <div class="circleCard">
+        <a href="#" class="fill-div"><h3 class="title">Explore The Galaxy</h3></a>
+        </div>
+section#sectionFive
+  p Have any project in mind?
+  h2 Just Say Hello!
+  button.button-86(role='buttonSocial') HIRE ME
+section#sectionSix
+  .hero
+    h1 My Social Media
+    .social-links
+      // <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      // <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+      a(href='https://twitter.com/parthhimself_' target='_blank')
+        i.fab.fa-twitter
+      a(href='https://github.com/parthhimself22' target='_blank')
+        i.fab.fa-github
+      a(href='https://www.linkedin.com/in/parth-baviskar-306ba6241/' target='_blank')
+        i.fab.fa-linkedin-in
